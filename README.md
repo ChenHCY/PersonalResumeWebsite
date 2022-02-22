@@ -1,5 +1,5 @@
 # My-Resume-Website
-Chen's Resume Website.  Website Address: http://chenresume.com/ 
+Personal Resume Website | Web-Application | http://chenresume.com/
 
 ● Designed and developed a personal website for mobile and desktop to showcase my skills, personal profile, work experience, activities, and project details. 
 
