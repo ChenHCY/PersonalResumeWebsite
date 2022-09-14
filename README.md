@@ -1,4 +1,4 @@
-# My-Resume-Website
+# Personal Resume Website
 Personal Resume Website | Web-Application | http://chenresume.com/
 
 ● Designed and developed a responsive, interactive features website for mobile and desktop to showcase my skills, personal profile, work experience, activities, and project details. 
