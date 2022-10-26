@@ -1,0 +1,428 @@
+@import url(style.css);
+
+/*Home page layout*/
+.content h3{
+    font-size: 7rem;
+    color:var(--white);
+    line-height: 1.1;
+}
+
+.content p{
+    font-size: 2rem;
+    color:var(--white);
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.share{
+    position: relative;
+    top: 5rem;
+    padding:2rem;
+}
+
+.share a{
+    height: 7rem;
+    width: 7rem;
+    line-height: 5rem;
+    margin:.5rem;
+    font-size: 3.5rem;
+    color:var(--white);
+}
+
+.share a:hover{
+    color:rgb(0, 68, 255);
+    transform: translateY(-20px);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap:2rem;
+}
+
+/*About page layout*/
+.row .box-container{
+    flex:1 1 40rem;
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+}
+
+.row .box-container .box{
+    flex:1 1 18rem;
+    text-align: center;
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.row .box-container .box h3{
+    font-size: 5rem;
+    color:var(--black);
+    line-height: 1.1;
+}
+
+.row .box-container .box p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    padding:.5rem 0;
+}
+
+.row .content{
+    flex:1 1 40rem;
+}
+
+.row .content h3{
+    font-size: 3.5rem;
+    color:var(--black);
+    line-height: 1.8;
+    padding-top: 1rem;
+}
+
+.row .content h3 span{
+    color:var(--blue);
+}
+
+.row .content p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.row .content p1{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.row .content a{
+    font-size: 1.7rem;
+    color:var(--blue);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.row .content a:hover{
+    font-size: 1.7rem;
+    color:red;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.row:nth-child(3){
+    padding-top: 2rem;
+}
+
+.row .progress{
+    flex:1 1 40rem;
+}
+
+.row .progress h3{
+    color:var(--black);
+    font-weight: normal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .progress .bar{
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    height:2rem;
+    padding:.5rem;
+    margin:1rem 0;
+}
+
+.row .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--blue);
+    border-radius: 5rem;
+}
+
+.row .progress .bar-1-1 span{
+    width: 90%;
+}
+
+.row .progress .bar-1-2 span{
+    width: 80%;
+}
+
+.row .progress .bar-1-3 span{
+    width: 85%;
+}
+
+.row .progress .bar-2-1 span{
+    width: 90%;
+}
+
+.row .progress .bar-2-2 span{
+    width: 70%;
+}
+
+.row .progress .bar-2-3 span{
+    width: 80%;
+}
+
+.row .progress .bar-1-4 span{
+    width: 75%;
+}
+
+/* Resume page layout*/
+.layout-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.layout-container .area{
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+}
+
+.layout-container .place{
+    padding:2rem;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.layout-container .place .image{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.layout-container .place p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    padding:.5rem 0;
+}
+
+.layout-container .place h3{
+    font-size: 3rem;
+    color:blue;
+    line-height: 1.1;
+    padding-bottom: 2rem;
+}
+
+.layout-container .area i{
+    font-size:4rem;
+    padding-bottom: 5rem;
+    color:#fff;
+}
+
+.layout-container .area h3{
+    font-size:2rem;
+    padding-bottom: 1rem;
+    color:var(--black);
+}
+
+.layout-container .area p{
+    font-size:1.4rem;
+    line-height: 1.8;
+    color:var(--light-color);
+}
+
+.layout-container .area::before{
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--blue);
+    z-index: -1;
+    clip-path: circle(9rem at 5% 0%);
+    transition: .3s linear;
+}
+
+.layout-container .area:hover::before{    
+    clip-path: circle(100%);
+}
+
+.layout-container .area:hover > *{
+    color:#fff;
+}
+
+/*Project page layout*/
+.region-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    margin-bottom: 5rem;
+}
+
+.region-container .case{
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.region-container .case .image{
+    height: 35rem;
+    overflow:hidden;
+    border-radius: .5rem;
+}
+
+.region-container .case .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.region-container .case:hover .image img{
+    transform:scale(1.2);
+}
+
+.region-container .case .catalog{
+    padding-top: 1rem;
+}
+
+.region-container .case .catalog h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.region-container .case .catalog h1{
+    color:var(--blue);
+    font-size: 1.5rem;
+}
+
+.region-container .case .catalog p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:0.5rem 0;
+}
+
+/*Activtie/Soccer page layout*/
+.wrap {
+    width: 890px;
+    height: 500px;
+    margin: 3rem auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+}
+
+.wrap .list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wrap .list .item {
+    position: absolute;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.wrap .list .item>a>img {
+    width: 890px;
+    height: 500px;
+}
+
+.wrap .list .item>a>video {
+    width: 890px;
+    height: 500px;
+}
+
+.wrap .list .active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.wrap .pointList {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.wrap .pointList .point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.wrap .pointList .current {
+    background-color: blue;
+    transform: scale(1.5);
+}
+
+/*contact page layout*/
+.district-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.district-container .gaine{
+    border-radius: .5rem;
+    padding: 2rem;
+    align-items: center;
+    width: 30rem;
+}
+
+.district-container .gaine .icon{
+    text-align: center;
+    margin-bottom: 2.1rem;
+}
+
+.district-container .icon i {
+    font-size: 4.2rem;
+    color: #FFFFFF;
+}
+
+.district-container .gaine p{
+    font-size: 1.7rem;
+    color:var(--white);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.district-container .gaine h5{
+    font-size: 2.5rem;
+    color:var(--blue);
+    line-height: 1.8;
+    padding-top: 1rem;
+}
+
+.district-container .gaine a{
+    font-size: 1.7rem;
+    color:var(--white);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.district-container .gaine a:hover{
+    font-size: 1.7rem;
+    color:red;
+    line-height: 1.8;
+    padding:1rem 0;
+}
